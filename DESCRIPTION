@@ -1,0 +1,11 @@
+Package: skRatt
+Title: A package for printing the Swedish word "skratt" in different languages.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Martin", "Søyland", , "martin.soyland@stv.uio.no", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2463-8469"))
+Description: No further description required.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
