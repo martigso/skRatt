@@ -23,8 +23,6 @@
 #' 
 random_skratt <- function() {
   
-  skrattdat <- skRatt::skrattdat
-  
   index <- sample(1:nrow(skrattdat), 1)
   
   cat(
