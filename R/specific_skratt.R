@@ -14,18 +14,30 @@
 #' 
 #' specific_skratt()
 #'
-#' @import crayon
+#' @import crayon 
 #' @export
 #' 
 #' 
 specific_skratt <- function(language = "en") {
   
+  index <- which(tolower(skrattdat$ccode) == tolower(language))
+  
+  if(identical(integer(), index)) {
+    
+    cat(
+      "skRatt is not available in '",
+      red$underline(language), "'", 
+      sep = ""
+    )
+    
+  }
+  
   
   cat(
     "skRatt in",
-    skrattdat$cname[which(tolower(skrattdat$ccode) == tolower(language))],
+    skrattdat$cname[index],
     "is:",
-    cyan$underline(skrattdat$skratt[which(tolower(skrattdat$ccode) == tolower(language))])
+    cyan$underline(skrattdat$skratt[index])
   )
   
   
