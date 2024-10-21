@@ -23,7 +23,10 @@
 #' 
 random_skratt <- function() {
   
+  data("skrattdat", package = "skRatt")
+  
   index <- sample(1:nrow(skrattdat), 1)
+  
   cat(
     "skRatt in",
     skrattdat$cname[index],
